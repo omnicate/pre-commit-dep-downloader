@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/omnicate/pre-commit-dep-downloader
-    rev: main
+    rev: db52d5a7bbab2f1acae0d12c2e84c1db783d8060
     hooks:
       - id: dep-downloader
         name: "Download dependencies (brew, go)"
