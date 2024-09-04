@@ -1,0 +1,7 @@
+- id: dep-downloader
+  name: Pre-commit dependency downloader
+  description: "Download dependencies required for pre-commit hooks."
+  entry: hooks/pre-commit-dep-downloader.sh
+  language: script
+  pass_filenames: false
+  always_run: true
