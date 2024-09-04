@@ -1,11 +1,11 @@
 repos:
-  - repo: https://github.com/syntaqx/git-hooks
-    rev: v0.0.18
-    hooks:
-      - id: shellcheck
   - repo: https://github.com/omnicate/pre-commit-dep-downloader
     rev: main
     hooks:
       - id: dep-downloader
         name: "Download dependencies (brew, go)"
         args: ["--brew-packages=shellcheck"]
+  - repo: https://github.com/syntaqx/git-hooks
+    rev: v0.0.18
+    hooks:
+      - id: shellcheck
