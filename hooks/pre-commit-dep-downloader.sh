@@ -30,7 +30,7 @@ function filter_packages() {
 }
 
 function install_brew_packages() {
-  if ! which -s brew ; then
+  if ! command -v brew >/dev/null 2>&1; then
     echo "Homebrew is not installed. Attempting to install it..."
     curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
   fi
